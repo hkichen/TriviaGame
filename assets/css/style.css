@@ -1,0 +1,23 @@
+body {
+    background: #065346;
+}
+
+.content {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+    background: #b6dfbb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    font-size: 40px;
+    font: #590074;
+    text-align: center;
+    padding: 20 0 20 0;
+}
+
+.triviaQuestion {
+    background: #f9fffd;
+    font-size: 30px;
+}
