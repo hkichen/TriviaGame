@@ -15,25 +15,29 @@
 
 <body>
     <div class="content">
+        
         <div class="header">
-            Animal Trivia
+            Random Animal Trivia
         </div>
-        <div class="row">
-            <div class="triviaQuestion">
+        
+        <div class="countDown">
+            <button id="start" type="button">Start</button>
+            <h1>Time Remaining: <span id="time"></span> seconds</h1>
+        </div>
+
+        <div class="triviaQuestion">
                 <p class="question">Question: <span id="randomQuestion"></span></p>
-            </div>
         </div>
-        <div class="row">
-            <div class="answers">
-                <ul class="answerOptions">
-                    <li><span id="answer"></span></li>
-                    <li><span id="answer"></span></li>
-                    <li><span id="answer"></span></li>
-                    <li><span id="answer"></span></li>
-                </ul>
-            </div>
+        
+        <div class="answerChoices">
+            <p class="ans"><span id="answer1"></span></p>
+            <p class="ans"><span id="answer2"></span></p>
+            <p class="ans"><span id="answer3"></span></p>
+            <p class="ans"><span id="answer4"></span></p>
         </div>
     </div>
-    
+
+    <script src="assets/javascript/app.js"></script>
+        
 </body>
 </html>

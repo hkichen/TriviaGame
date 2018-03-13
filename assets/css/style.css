@@ -18,6 +18,19 @@ body {
 }
 
 .triviaQuestion {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: #f9fffd;
+    font-size: 30px;
+    text-align: center;
+}
+
+.question {
+    text-align: left;
+}
+
+.ans {
+    display: block;
+    text-align: center;
     font-size: 30px;
 }
