@@ -1,29 +1,29 @@
 
 //make object of objects
-var triviaGame = {
-    question: "What is the only animal that can fly backwards?",
+var triviaGame = [
+    {question: "What is the only animal that can fly backwards?",
     choices: ["a. Woodpecker", "b. Hummingbird", "c. Bat", "d. Hawk"],
-    answer: "b. Hummingbird",
+    answer: "b. Hummingbird"},
 
-    question:"What living bird has the largest wing span?",
+    {question:"What living bird has the largest wing span?",
     choices: ["a. Wandering Albatross", "b. California Condor", "c. Golden Eagel", "d. Great White Pelican"],
-    answer: "a. Wandering Albatross",
+    answer: "a. Wandering Albatross"},
 
 
-    question:"What does a panda's primary diet consist of?",
+    {question:"What does a panda's primary diet consist of?",
     choices: ["a. Mushrooms", "b. Acorns", "c. Bamboo", "d. Fruit"],
-    answer: "c. Bamboo",
+    answer: "c. Bamboo"},
 
 
-    question:"What is the term for the fear of dogs?",
+    {question:"What is the term for the fear of dogs?",
     choices: ["a. Xenophobia", "b. Philophobia", "c. Cynophobia", "d. Coulrophobia"],
-    answer: "c. Cynophobia",
+    answer: "c. Cynophobia"},
 
     
-    question:"What is the proper term for a group of parrots?",
+   {question:"What is the proper term for a group of parrots?",
     choices: ["a. Pandemonium", "b. Hullabaloo", "c. Rukus", "d. Brouhaha"],
-    answer: "a. Pandemonium",
-};
+    answer: "a. Pandemonium"}
+];
 
 $("#start").click(displayQuestion);
 function displayQuestion (){
