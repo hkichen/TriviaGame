@@ -69,9 +69,9 @@ function displayQuestion() {
                 } else {
                     displayQuestion();
                 } 
-            }, 2000);  
+            }, 3000);  
         }
-    }, 1000);
+    }, 3000);
 }
 
 //set of functions that control what containers are displayed
@@ -91,8 +91,8 @@ function displayFeedback(feedback) {
 function displayEndGame() {
     hideAll();
     $("#endGameContainer").show();
-    $("#correct").text(correct);
-    $("#wrongs").text(wrong);
+    $("#correct").text("Number of Right: " + correct);
+    $("#wrongs").text("Number of Wrong: " + wrong);
 }
 
 var wrong = 0;
@@ -112,10 +112,10 @@ $(".ans").click( function(event) {
     if (questionIndex < gameQuestions.length) {
         setTimeout(function() {
             displayQuestion();
-        }, 2000);
+        }, 3000);
     } else {
         setTimeout(function(){
           displayEndGame();  
-        }, 2000)
+        }, 3000)
     }
 });

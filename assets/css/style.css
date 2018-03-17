@@ -1,5 +1,6 @@
 body {
     background: url(../images/countrylife.jpg);
+    font-family: "Maiandra GD";
 }
 
 .content {
@@ -10,12 +11,13 @@ body {
 }
 
 .header {
-    font-family: "Magneto";
+    font-family: "Jokerman";
     font-size: 50px;
     text-decoration: underline;
-    color: #603d75;
+    color: #005a5a;
     text-align: center;
     padding: 20 0 20 0;
+    text-shadow: 1px 2px 2px #d38cd3, 0 0 25px rgb(189, 90, 184), 0 0 5px rgb(73, 34, 92);
 }
 
 #start, #reset {
@@ -26,6 +28,11 @@ body {
     background: #0b9b6b;
     color: #ffffff;
 }
+
+h1, #feedback, #endGameContainer, #startContainer {
+    font-size: 25px;
+    text-align: center;
+}
 .triviaQuestion {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -35,7 +42,11 @@ body {
 }
 
 .question {
-    text-align: left;
+    text-align: center;
+    font-size: 25px;
+    background: #f1ffa4;
+    padding: 35 0 35 0;
+
 }
 
 .ans {
@@ -47,4 +58,10 @@ body {
 .ans:hover {
     background: #acff85;
     color: #006e53;
+}
+
+#scoreKeeper{
+    font-size: 30px;
+    font-family:"Ravie";
+
 }
