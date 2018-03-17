@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script
-        src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous">
-    </script>
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
 </head>
 
 <body>
@@ -19,25 +19,39 @@
         <div class="header">
             Random Animal Trivia
         </div>
-        
-        <div class="countDown">
+        <div id="startContainer">
             <button id="start" type="button">Start</button>
+        </div>
+        
+        <div id="playContainer" hidden>
             <h1>Time Remaining: <span id="time"></span> seconds</h1>
+
+            <p class="question">Question: <span id="randomQuestion"></span></p>
+
+            <div class="answerChoices">
+                <p class="ans"><span id="answer1"></span></p>
+                <p class="ans"><span id="answer2"></span></p>
+                <p class="ans"><span id="answer3"></span></p>
+                <p class="ans"><span id="answer4"></span></p>
+            </div>  
         </div>
 
-        <div class="triviaQuestion">
-                <p class="question">Question: <span id="randomQuestion"></span></p>
+        <div id="feedbackContainer" hidden>
+            <p id="feedback">Correct!</p>
         </div>
-        
-        <div class="answerChoices">
-            <p class="ans"><span id="answer1"></span></p>
-            <p class="ans"><span id="answer2"></span></p>
-            <p class="ans"><span id="answer3"></span></p>
-            <p class="ans"><span id="answer4"></span></p>
+
+        <div id="endGameContainer" hidden>
+            <p>Final Results: </p>
+            <p id="correct">-1</p>
+            <p id="wrongs">-1</p>
+            <button id="reset" type="button">Reset</button>
         </div>
     </div>
 
+
+    
+    
     <script src="assets/javascript/app.js"></script>
-        
+    
 </body>
 </html>

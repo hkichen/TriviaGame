@@ -1,5 +1,5 @@
 body {
-    background: #065346;
+    background: url(../images/countrylife.jpg);
 }
 
 .content {
@@ -7,16 +7,25 @@ body {
     height: 100%;
     margin: 0 auto;
     background: #b6dfbb;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .header {
-    font-size: 40px;
-    font: #590074;
+    font-family: "Magneto";
+    font-size: 50px;
+    text-decoration: underline;
+    color: #603d75;
     text-align: center;
     padding: 20 0 20 0;
 }
 
+#start, #reset {
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
+    font-family: "Goudy Stout";
+    background: #0b9b6b;
+    color: #ffffff;
+}
 .triviaQuestion {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -33,4 +42,9 @@ body {
     display: block;
     text-align: center;
     font-size: 30px;
+}
+
+.ans:hover {
+    background: #acff85;
+    color: #006e53;
 }
